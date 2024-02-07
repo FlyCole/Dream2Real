@@ -1,0 +1,75 @@
+{
+    "dataset": {
+        "files": "transforms.json"
+    },
+    "engine": {
+        "inpaint_holes": false,
+        "caption": true,
+        "visseg": true,
+        "render_distractors": false,
+        "spatial_smoothing": true,
+        "physics_only": true,
+        "use_vis_pcds": false,
+        "pcds_type": 0,
+        "use_cache_dynamic_masks": true,
+        "use_cache_segs": true,
+        "use_cache_cam_poses": true,
+        "use_cache_captions": true,
+        "use_cache_phys": true,
+        "use_cache_vis": true,
+        "use_cache_renders": false,
+        "use_cache_goal_pose": false,
+        "use_phys": true,
+        "use_phys_tsdf": true,
+        "lazy_phys_mods": true,
+        "multi_view_captions": true,
+        "use_cache_llm": true,
+        "scene_type": 1,
+        "sample_res": [60, 16, 36, 4, 4, 4],
+        "scene_centre": [0.5, 0.0, 0.035],
+        "scene_phys_bounds": [[0.3, -0.4, 0.0], [1.0, 1.4, 1.2]],
+        "render_cam_pose_idx": [1]
+    },
+    "trainer": {
+        "train": false,
+        "train_device": "cuda:0",
+        "data_device": "cuda:0",
+        "scale": 1000.0,
+        "load_snapshot": false,
+        "n_steps": 8000,
+        "save_snapshot": true,
+        "save_snapshot_path": "full_base.ingp",
+        "near_distance": 0.05,
+        "optimize_extrinsics": true
+    },
+    "render": {
+        "depth_range": [0.0, 4.0]
+    },
+    "camera": {
+        "fx": 924.66912,
+        "fy": 926.49735,
+        "k1": 0.096692,
+        "k2": -0.166479,
+        "k3": 0,
+        "k4": 0,
+        "p1": -0.000194,
+        "p2": 0.002049,
+        "is_fisheye": false,
+        "cx": 654.51953,
+        "cy": 355.18523,
+        "w": 1280,
+        "h": 720,
+        "aabb_scale": 2,
+        "scale": 1,
+        "offset": [0.0, 0.2, 0.2],
+        "mw": 0,
+        "mh": 0
+    },
+    "vis": {
+        "gui": true
+    },
+    "robot": {
+        "scanning_traj": "confj/confj_3d_68.txt",
+        "grasp_depth_img_idx": 23
+    }
+}

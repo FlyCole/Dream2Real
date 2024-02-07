@@ -1,0 +1,27 @@
+{
+    "dataset": {
+        "files": "bg_transforms.json"
+    },
+    "trainer": {
+        "train": false,
+        "train_device": "cuda:0",
+        "data_device": "cuda:0",
+        "scale": 1000.0,
+        "load_snapshot": true,
+        "load_snapshot_path": "full_base.ingp",
+        "n_steps": 16000,
+        "save_snapshot": true,
+        "save_snapshot_path": "bg_base.ingp",
+        "near_distance": 0.05,
+        "optimize_extrinsics": false
+    },
+    "render": {
+        "depth_range": [
+            0.0,
+            4.0
+        ]
+    },
+    "vis": {
+        "gui": true
+    }
+}

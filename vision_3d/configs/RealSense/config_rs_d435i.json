@@ -1,0 +1,21 @@
+{
+    "camera": {
+        "w": 1280,
+        "h": 720,
+        "fx": 929.0711669921875,
+        "fy": 648.574951171875,
+        "cx": 929.2916259765625,
+        "cy": 358.066162109375,
+        "mw": 0,
+        "mh": 0
+    },
+    "vis": {
+        "vis_device": "cuda:0",
+        "n_vis_iter": 500,
+        "n_bins_fine_vis": 10,
+        "im_vis_reduce": 10,
+        "grid_dim": 256,
+        "live_vis": 1,
+        "live_voxel_size": 0.005
+    }
+}

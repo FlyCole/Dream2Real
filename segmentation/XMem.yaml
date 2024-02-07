@@ -1,0 +1,21 @@
+name: XMem
+
+model_pth: "./XMem/saves/XMem.pth"
+buffer_size: 100
+max_mid_term_frames: 10
+min_mid_term_frames: 5
+max_long_term_elements: 10000
+num_prototypes: 128
+top_k: 30
+mem_every: 10
+deep_update_every: -1
+enable_long_term: true
+enable_long_term_count_usage: true
+
+num_objects: 10
+size: 480
+output: "./output"
+
+# for interactive labelling
+first_mask_loaded: true
+fbrs_model: "./XMem/saves/fbrs.pth"
