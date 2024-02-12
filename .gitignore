@@ -1,0 +1,10 @@
+env/
+*.pyc
+__pycache__/
+*.idea
+3d_vision/test_data/render/screen_capture/
+src/
+.vscode/
+models/
+dataset/
+method_out/

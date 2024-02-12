@@ -1,0 +1,6 @@
+[submodule "segmentation/XMem"]
+	path = segmentation/XMem
+	url = git@github.com:hkchengrex/XMem.git
+[submodule "reconstruction/instant-ngp"]
+	path = reconstruction/instant-ngp
+	url = git@github.com:NVlabs/instant-ngp.git
