@@ -91,6 +91,10 @@ python demo.py dataset/pool_X method_out/pool_X configs/pool_X_demo.json "move t
 python demo.py dataset/shelf method_out/shelf configs/shelf_demo.json "move the strawberry milkshake bottle to make three milkshake bottles standing upright in a neat row"
 ```
 
+#### Custom Instructions
+
+To use your own instructions, you can modify the commands above. You should also change the .json config file (the path is in the command) to set the "use cache" flags to false. For example, if your cache is for the task of moving an apple and you want to move the orange instead, then you can no longer use the cached NeRF visual models etc. Therefore, set all the "use cache" flags from `use_cache_phys` onwards to false.
+
 ## License
 
 This code is available under the CC BY-NC-SA 4.0 license as described here:
